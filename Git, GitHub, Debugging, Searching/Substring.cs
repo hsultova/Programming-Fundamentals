@@ -2,14 +2,14 @@
 {
     using System;
 
-    public class Substring_broken
+    public class Substring
     {
         public static void Main()
         {
             string text = Console.ReadLine();
             int jump = int.Parse(Console.ReadLine());
 
-            const char Search = 'р';
+            const char Search = 'p';
             bool hasMatch = false;
 
             for (int i = 0; i < text.Length; i++)
@@ -24,6 +24,10 @@
                     {
                         endIndex = text.Length;
                     }
+					if (i + endIndex < text.Length)
+					{
+						endIndex++;
+					}
 
                     string matchedString = text.Substring(i, endIndex);
                     Console.WriteLine(matchedString);
