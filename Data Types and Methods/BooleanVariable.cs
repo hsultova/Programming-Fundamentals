@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 
 namespace ProgrammingFundamentals
 {
@@ -8,7 +8,14 @@ namespace ProgrammingFundamentals
 		{
 			var input = Console.ReadLine();
 			var toBoolean = Convert.ToBoolean(input);
-			Console.WriteLine(toBoolean);
+			if (toBoolean == true)
+			{
+				Console.WriteLine("Yes");
+			}
+			else
+			{
+				Console.WriteLine("No");
+			}
 		}
 	}
 }
