@@ -1,8 +1,8 @@
-using System;
+﻿using System;
 
 namespace ProgrammingFundamentals
 {
-	class VowelOrDigit
+	class  VowelOrDigit
 	{
 		static void Main(string[] args)
 		{
@@ -18,7 +18,7 @@ namespace ProgrammingFundamentals
 			}
 			else
 			{
-				Console.WriteLine("It's another symbol");
+				Console.WriteLine("other");
 			}
 		}
 	}
