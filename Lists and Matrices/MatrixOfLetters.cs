@@ -1,0 +1,36 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace ProgrammingFundamentals
+{
+	class MatrixLetters
+	{
+		static void Main(string[] args)
+		{
+			int rows = int.Parse(Console.ReadLine());
+			int cols = int.Parse(Console.ReadLine());
+
+			char letter = 'A';
+			char[,] matrix = new char[rows, cols];
+
+			for (int row = 0; row < rows; row++)
+			{
+				for (int col = 0; col < cols; col++)
+				{
+					matrix[row, col] = letter;
+					letter++;
+				}
+			}
+
+			for (int row = 0; row < rows; row++)
+			{
+				for (int col = 0; col < cols; col++)
+				{
+					Console.Write(matrix[row, col] + " ");
+				}
+				Console.WriteLine();
+			}
+		}
+	}
+}
