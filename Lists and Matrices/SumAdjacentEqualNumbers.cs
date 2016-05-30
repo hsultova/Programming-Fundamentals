@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 
 namespace ProgrammingFundamentals
@@ -8,9 +7,9 @@ namespace ProgrammingFundamentals
 	{
 		static void Main(string[] args)
 		{
-			var numbers = Console.ReadLine().Split(' ').Select(int.Parse).ToList();
+			var numbers = Console.ReadLine().Split(' ').Select(double.Parse).ToList();
 			int position = 0;
-			while(position<numbers.Count-1)
+			while (position < numbers.Count - 1)
 			{
 				if (numbers[position] == numbers[position + 1])
 				{
